@@ -22,14 +22,16 @@ const ExpenseForm = (props) => {
         event.preventDefault();
 
         const expense = {
+            id: Math.random(),
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate)
         };
-        console.log(expense);
+
         setEnteredAmount('');
         setEnteredTitle('');
         setEnteredDate('');
+        props.onExpenses(expense)
     })
     return (
       <form onSubmit={submitHandler}>
@@ -53,7 +55,7 @@ const ExpenseForm = (props) => {
               onChange={(event) =>
                 inputChangeHandler("amount", event.target.value)
               }
-                        value={enteredAmount}
+              value={enteredAmount}
             />
           </div>
           <div className="new-expense__control">
@@ -65,12 +67,15 @@ const ExpenseForm = (props) => {
               onChange={(event) =>
                 inputChangeHandler("date", event.target.value)
               }
-                        value={enteredDate}
+              value={enteredDate}
             />
           </div>
-          <button type="submit">New Expense</button>
+
           {enteredAmount}
         </div>
+        <button className="btn" type="submit">
+          New Expense
+        </button>
       </form>
     );
   };

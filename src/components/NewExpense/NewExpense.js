@@ -4,11 +4,12 @@ import ExpenseForm from './ExpenseForm';
 import './NewExpense.css';
 
 const NewExpense = (props) => { 
+    
     return (
-        <div className='new-expense'>
-            <ExpenseForm />
-        </div>
-    )
+      <div className="new-expense">
+        <ExpenseForm onExpenses={props.onExpenses} />
+      </div>
+    );
  }
 
 export default NewExpense;
