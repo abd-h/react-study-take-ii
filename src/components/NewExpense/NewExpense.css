@@ -21,9 +21,11 @@
     color: white;
     border-radius: 12px;
     margin-inline-end: 1rem;
-    justify-self: flex-end;
-    align-self: flex-end;
+    justify-self: center;
+    align-self: center;
 }
+
+
 
 .new-expense button:hover,
 .new-expense button:active {

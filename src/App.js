@@ -40,8 +40,7 @@ function App() {
  
     
   }
-console.log(enteredData);
-  console.log(initialExpenses);
+
   return (
     <div className="App">
       <h1>Let's get started!</h1>
