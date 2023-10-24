@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # react-study-take-ii
 I am using this repository to keep record of my studying journey on React JS
 >>>>>>> a2171f304f74d21241dc862fb75ae1179587c5f7
+=======
+# react-study-take-ii
+I am using this repository to keep record of my studying journey on React JS
+>>>>>>> 3e5d81b861d36198af3a8181ce189834702d8c76
