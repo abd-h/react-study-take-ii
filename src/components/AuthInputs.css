@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.auth-input {
+    width: 30rem;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color:rgb(200, 198, 198);
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+/* .controls p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+} */
+/* 
+.controls input {
+    width: 20rem;
+    padding-block: 0.5rem;
+    padding-inline: 0;
+    border-radius: 5px;
+
+} */
+
+.action {
+    display: flex;
+    align-self: flex-end;
+    justify-self: center;
+    gap: 1rem;
+    margin-inline-end: 4rem;
+    /* border: 1px solid rgb(55, 255, 0); */
+    margin-block: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* .button {
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(255, 234, 1);
+    border-radius: 5px;
+    text-transform: uppercase;
+} */
+
+.text-btn {
+    background-color: transparent;
+    border: none;
+    color:rgb(200, 198, 198);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+

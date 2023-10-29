@@ -1,11 +1,13 @@
 
 import './App.css';
-import Header from './Header';
+import AuthInputs from './components/AuthInputs';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-    <Header />
+      <Header />
+      <AuthInputs />
     </div>
   );
 }

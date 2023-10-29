@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-img {
+/* img {
     width: 150px;
      margin-block: 1.5rem;
 }
@@ -16,15 +16,19 @@ div {
     width: 60%;
     margin-inline: auto;
    
-}
+} */
 
-header {
+/* header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
+header p {
+    color: #aeacac;
+    font-size: 1rem;
+}
 h1, p {
     margin-block: 0;
     line-height: 1.6;
