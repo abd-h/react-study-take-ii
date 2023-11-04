@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
 import Button from "./Button";
-import { styled } from "styled-components";
+// import { styled } from "styled-components";
 
 import Input from "./Input";
 
 import "./AuthInputs.css";
 
-const ControlContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-block-end: 1.5rem;
-`;
+// const ControlContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   gap: 0.5rem;
+//   margin-block-end: 1.5rem;
+// `;
 
 const AuthInputs = (props) => {
   const [enteredEmail, setenteredEmail] = useState("");
@@ -39,8 +39,8 @@ const AuthInputs = (props) => {
   const passwordNotValid = submitBtn && !enteredPassword.trim().length < 6;
 
   return (
-    <div className="auth-input">
-      <ControlContainer>
+    <div id="auth-inputs" className="w-full max-w-md p-8 mx-auto rounded shadow-md bg-gradient-to-b from-stone-700 to-stone-800">
+      <div className="flex flex-col gap-2 mb-6">
         <Input
           label="Email"
           $invalid={emailNotValid}
@@ -58,12 +58,12 @@ const AuthInputs = (props) => {
           id="password"
           onChange={(e) => inputHandler("password", e.target.value)}
         />
-      </ControlContainer>
-      <div className="action">
-        <button type="button" className="text-btn">
+      </div>
+      <div className="flex justify-end gap-4">
+        <Button type="button">
           Create new account
-        </button>
-        <Button onClick={submitHandler} type="button" className="button">
+        </Button>
+        <Button onClick={submitHandler} type="button">
           Sign in
         </Button>
       </div>
